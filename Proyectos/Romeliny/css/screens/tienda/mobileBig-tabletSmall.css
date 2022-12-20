@@ -1,0 +1,7 @@
+.banner {
+  display: block !important;
+}
+
+.productos {
+  grid-template-columns: auto auto;
+}

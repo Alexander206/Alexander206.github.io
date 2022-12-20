@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="Script" href="./app.js" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class="degradado"></div>
+
+        <div class="superiorHeader">
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar_menu">
+                &#8801
+            </label>
+            <div class="menu">
+                <nav class="menu__nav">
+                    <a class="menu__nav__text" href="./index.html">
+                        <h2>Home</h2>
+                    </a>
+                    <a class="menu__nav__text" href="./formularios.html">
+                        <h2>Formularios</h2>
+                    </a>
+                    <a class="menu__nav__text" href="./select.html">
+                        <h2>Select</h2>
+                    </a>
+                    <a class="menu__nav__text" href="./botones.html">
+                        <h2>Calendarios</h2>
+                    </a>
+                    <a class="menu__nav__text" href="./botones.html">
+                        <h2>Botones</h2>
+                    </a>
+                    <a class="menu__nav__text" href="./auto_requiere.html">
+                        <h2>Auto y requiere</h2>
+                    </a>
+                    <label for="check" class="esconder_menu">
+                        &#215
+                    </label>
+                </nav>
+            </div>
+            <figure class="logo__figure">
+                <img class="logo__img" src="LogoSVG__White.svg" alt="" />
+            </figure>
+        </div>
+
+        <div class="titulo">
+            <h1 class="titulo__text">Formularios en HTML</h1>
+            <h3 class="titulo__slogan">Así se hacen los formularios</h3>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="contenido__secction">
+                <h2 class="section__title">Secciones</h2>
+                <div class="secction__textImagen">
+                    <p class="section__text">Aquí encontraras la explicación y ejemplos de cada lección sobre
+                        formularios. Le das click sobre cada bloque y te direcionará a una pagina distinta.</p>
+                    <img class="secction__img" src="Multimedia/monitor.png" alt="imagen del secction">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="paginas">
+
+            <div class="paginas__columna">
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="./formularios.html">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Formularios.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="./formularios.html">
+                            <h3 class="paginas__component__title">
+                                Formularios
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            los formularios en HTML son bastante comunes, se usan para comunicar y enviar datos al
+                            servidor o al proceso de Back-End.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./formularios.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="./select.html">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Select.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="./select.html">
+                            <h3 class="paginas__component__title">
+                                Select
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            Los select también se usan para enviar datos, la diferencia es que podemos elegir diferentes
+                            opciones.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./select.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="paginas__columna">
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="./calendarios.html">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Calendario.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="./calendarios.html">
+                            <h3 class="paginas__component__title">
+                                Calendarios
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            Aquí podemos enviar datos de fecha y horas, también teniendo en cuenta las configuraciones
+                            locales.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./calendarios.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="./botones.html">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Botones.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="./botones.html">
+                            <h3 class="paginas__component__title">
+                                Botones
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            Los botones nos ayudan a enviar información con la acción de un clic.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./botones.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="paginas__columna">
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="./auto_requiere.html">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Auto_Requiere.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="./auto_requiere.html">
+                            <h3 class="paginas__component__title">
+                                Auto & requiere
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            Estas dos funcionalidades nos ayudan a autocompletar formularios y a obligar a el usuario a
+                            escribir algún tipo de información.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./auto_requiere.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="paginas__component">
+                    <a class="paginas__component__Imagen" href="#">
+                        <figure class="paginas__component__figure">
+                            <img class="paginas__component__img" src="Multimedia/Proyectos.jpg"
+                                alt="Imagen superior del componente">
+                        </figure>
+                    </a>
+
+                    <div class="paginas__component__contenido">
+                        <a class="paginas__component__link" href="#">
+                            <h3 class="paginas__component__title">
+                                Más proyectos
+                            </h3>
+                        </a>
+
+                        <p class="paginas__component__text">
+                            Aquí encontrarás mas proyectos que podrian interesarte.
+                        </p>
+                    </div>
+
+                    <a class="paginas__component__boton" href="./formularios.html">
+                        <div class="paginas__component__botonDiv">
+                            <h5 class="paginas__component__botonText">Ingresar a la página</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="footerSuperior">
+            <div class="footerContent1">
+                <figure class="logo__figure">
+                    <img class="logo__img" src="LogoSVG__White.svg" alt="logo para el footer">
+                </figure>
+                <article class="footerText">
+                    <p class="footerText___p">
+                        Estos proyectos son solo practica y tienen la finalidad de explicar los temas vistos en HTML y
+                        CSS, en un futuro se agregará a estos proyectos JavaScript.
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent2">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Sobre mí
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Curriculum</li>
+                        <li>Portafolio</li>
+                        <li>Proyectos</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent3">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Links
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Home</li>
+                        <li>Formularios</li>
+                        <li>Select</li>
+                        <li>Calendarios</li>
+                        <li>Botones</li>
+                        <li>Auto y requiere</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent4">
+                <article class="footerText">
+                    <form class="formulario" action="">
+                        <label for="nombre">
+                            <span>
+                                <h3 class="footerText__title">
+                                    Enviame un mensaje
+                                </h3>
+                                <br>
+                            </span>
+                            <input id="email" type="email" autocomplete="email" placeholder="Escribe tu correo">
+                        </label>
+                    </form>
+                </article>
+
+                <figure class="footerIconos">
+                    <img class="footerIconos__img" src="Iconos/facebook.png" alt="facebook">
+                    <img class="footerIconos__img" src="Iconos/instagram.png" alt="instagram">
+                    <img class="footerIconos__img" src="Iconos/linkedin.png" alt="linkedin">
+                </figure>
+            </div>
+        </section>
+        <section class="footerInferior">
+            <p class="textInferior">
+                Alex Frontend 2022 - All Rights Reserved
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>

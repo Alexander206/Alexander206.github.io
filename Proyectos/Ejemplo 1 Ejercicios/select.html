@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><Select></Select></title>
+
+    <link rel="stylesheet" href="./formularios.css" />
+    <link rel="Script" href="./app.js" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom" />
+</head>
+
+<body>
+    <aside class="menu">
+        <ul>
+            <li class="list">
+                <a href="./index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./formularios.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Formularios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./select.html">
+                    <span class="icon">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                    </span>
+                    <span class="title">Select</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./calendarios.html">
+                    <span class="icon">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                    </span>
+                    <span class="title">Calendarios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./botones.html">
+                    <span class="icon">
+                        <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Botones</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./auto&requiere.html">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Auto y requiere</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Select</h2>
+            <div class="secction__textImagen">
+                <p class="section__text">El <strong>Select</strong> nos ayuda a seleccionar mediante un solo clik, una
+                    de varias opciones.
+                    Es supremamente util en cuestionarios de opciones ya predispuestas, como por ejemplo ciudades,
+                    instituicones o categorias.</p>
+                <img class="secction__img" src="Iconos/Select.png" alt="imagen del secction">
+            </div>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">El siguiente código muestra la estructura básica de un Select: </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;input List=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;datalist id=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="opción 1"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="opción 2"&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="opción 3"&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp &nbsp &nbsp &lt;/datalist&gt;</td>
+                </tr>
+
+            </table>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">
+                Hay muchas formas de crear Select, pero segun el curso de platzi, esta es una forma muy acertada de
+                hacerla. Aquí justo adelante voy a colocar un ejemplo que brindo platzi:
+            </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;input List="cursos"&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;datalist id="cursos"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="JavaScript"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="HTML5"&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;option value="CSS3"&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp &nbsp &nbsp &lt;/datalist&gt;</td>
+                </tr>
+
+            </table>
+            <br>
+            <p class="section__text"> De este codigo saldria un Select asi:</p>
+            <br>
+            <input list="cursos" class="form">
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+            </datalist>
+        </article>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Nota</h2>
+            <p class="section__text">
+                Esta forma de hacer el Select ayuda a que el usuario pueda escribir en el "buscador" y asi se le
+                desplegaran menos opciones que coincidan con las letras que coloca.
+            </p>
+            <br><br>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="footerSuperior">
+            <div class="footerContent1">
+                <figure class="logo__figure">
+                    <img class="logo__img" src="LogoSVG__White.svg" alt="logo para el footer">
+                </figure>
+                <article class="footerText">
+                    <p class="footerText___p">
+                        Estos proyectos son solo practica y tienen la finalidad de explicar los temas vistos en HTML y
+                        CSS, en un futuro se agregará a estos proyectos JavaScript.
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent2">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Sobre mí
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Curriculum</li>
+                        <li>Portafolio</li>
+                        <li>Proyectos</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent3">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Links
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Home</li>
+                        <li>Formularios</li>
+                        <li>Select</li>
+                        <li>Calendarios</li>
+                        <li>Botones</li>
+                        <li>Auto y requiere</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent4">
+                <article class="footerText">
+                    <form class="formulario" action="">
+                        <label for="nombre">
+                            <span>
+                                <h3 class="footerText__title">
+                                    Enviame un mensaje
+                                </h3>
+                                <br>
+                            </span>
+                            <input id="email" type="email" autocomplete="email" placeholder="Escribe tu correo">
+                        </label>
+                    </form>
+                </article>
+
+                <figure class="footerIconos">
+                    <img class="footerIconos__img" src="Iconos/facebook.png" alt="facebook">
+                    <img class="footerIconos__img" src="Iconos/instagram.png" alt="instagram">
+                    <img class="footerIconos__img" src="Iconos/linkedin.png" alt="linkedin">
+                </figure>
+            </div>
+        </section>
+        <section class="footerInferior">
+            <p class="textInferior">
+                Alex Frontend 2022 - All Rights Reserved
+            </p>
+        </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

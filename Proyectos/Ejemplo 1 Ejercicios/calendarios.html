@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendarios</title>
+
+    <link rel="stylesheet" href="./formularios.css" />
+    <link rel="Script" href="./app.js" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom" />
+</head>
+
+<body>
+    <aside class="menu">
+        <ul>
+            <li class="list">
+                <a href="./index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./formularios.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Formularios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./select.html">
+                    <span class="icon">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                    </span>
+                    <span class="title">Select</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./calendarios.html">
+                    <span class="icon">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                    </span>
+                    <span class="title">Calendarios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./botones.html">
+                    <span class="icon">
+                        <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Botones</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./auto&requiere.html">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Auto y requiere</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Calendarios</h2>
+            <div class="secction__textImagen">
+                <p class="section__text">En esta sección se explica la froma en la que se crean calendarios. Esto es muy
+                    importante, pues yo personalmente lo he visto pocas veces, pero no quiero enfrentarme a un problema
+                    relacionado con los calendarios en HTML en el mundo profesional y no saber como solucionarlo</p>
+                <img class="secction__img" src="Iconos/Calendario.png" alt="imagen del secction">
+            </div>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">El siguiente código muestra la estructura básica de un calendario: </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;form action=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;label for=""&gt; </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;span&gt;&lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;input id="" type="" name=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;input type="submit"&gt;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&nbsp &nbsp &nbsp &lt;/label&gt; </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>&lt;/form&gt;</td>
+                </tr>
+            </table>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">Hay que aclarar que se pueden hacer calendarios para pedir la hora, el dia, la
+                semana, el año o todos juntos. simplemente cambia en el <strong>input</strong>, especificamente en el
+                <strong>type</strong>. Acontinuación veran el codigo de cada opción:
+            </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;input id="hora" type="time" name="hora"&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&lt;input id="dia" type="date" name="dia"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&lt;input id="semana" type="week" name="semana"&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&lt;input id="mes" type="month" name="mes"&gt;</td>
+                </tr>
+            </table>
+            <br>
+            <p class="section__text">
+                Organizando el codigo de manera lógica en un form, tendria el siguiente aspecto:
+            </p>
+            <br>
+            <form class="form" action="">
+                <label for="hora">
+                    <span>Hora</span>
+                    <br>
+                    <input id="hora" type="time" name="hora">
+                </label>
+                <br><br>
+                <label for="dia">
+                    <span>Día</span>
+                    <br>
+                    <input id="dia" type="date" name="dia">
+                </label>
+                <br><br>
+                <label for="semana">
+                    <span>Semana</span>
+                    <br>
+                    <input id="semana" type="week" name="semana">
+                </label>
+                <br><br>
+                <label for="mes">
+                    <span>Mes</span>
+                    <br>
+                    <input id="mes" type="month" name="mes">
+                </label>
+                <br><br>
+                <input type="submit">
+            </form>
+        </article>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Calendario actual</h2>
+            <p class="section__text">
+                Para poder generar un calendario con la fecha y hora actualizada y ademas con todos los elementos ya
+                mencionados anteriormente. Se hace de la siguiente manera:
+            </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;form class="form" action=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;label for="CalendarioActual"&gt; </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;span&gt;&lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;input type="datetime-local" id="CalendarioActual"
+                        name="CalendarioActual"&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;/label&gt; </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;input type="submit"&gt;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&lt;/form&gt;</td>
+                </tr>
+            </table>
+            <br>
+            <p class="section__text">
+                Se veria de la siguiente manera:
+            </p>
+            <br>
+            <form class="form" action="">
+                <label for="CalendarioActual">
+                    <br>
+                    <input type="datetime-local" id="CalendarioActual" name="CalendarioActual">
+                </label>
+                <br><br>
+                <!-- Tipos de input para formularios: 
+                https://developer.mozilla.org/es/docs/Web/HTML/Element/input -->
+                <input type="submit">
+            </form>
+        </article>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Nota</h2>
+            <p class="section__text">
+                Son dos cosas, la primera es que lo que hace que se actualice con la fecha y hora local es la etiqueta
+                type, la segunda es que si no se le coloca al form la etiqueta input type="submit", no va a aparecer el
+                boton de "enviar"
+            </p>
+            <br><br>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="footerSuperior">
+            <div class="footerContent1">
+                <figure class="logo__figure">
+                    <img class="logo__img" src="LogoSVG__White.svg" alt="logo para el footer">
+                </figure>
+                <article class="footerText">
+                    <p class="footerText___p">
+                        Estos proyectos son solo practica y tienen la finalidad de explicar los temas vistos en HTML y
+                        CSS, en un futuro se agregará a estos proyectos JavaScript.
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent2">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Sobre mí
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Curriculum</li>
+                        <li>Portafolio</li>
+                        <li>Proyectos</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent3">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Links
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Home</li>
+                        <li>Formularios</li>
+                        <li>Select</li>
+                        <li>Calendarios</li>
+                        <li>Botones</li>
+                        <li>Auto y requiere</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent4">
+                <article class="footerText">
+                    <form class="formulario" action="">
+                        <label for="nombre">
+                            <span>
+                                <h3 class="footerText__title">
+                                    Enviame un mensaje
+                                </h3>
+                                <br>
+                            </span>
+                            <input id="email" type="email" autocomplete="email" placeholder="Escribe tu correo">
+                        </label>
+                    </form>
+                </article>
+
+                <figure class="footerIconos">
+                    <img class="footerIconos__img" src="Iconos/facebook.png" alt="facebook">
+                    <img class="footerIconos__img" src="Iconos/instagram.png" alt="instagram">
+                    <img class="footerIconos__img" src="Iconos/linkedin.png" alt="linkedin">
+                </figure>
+            </div>
+        </section>
+        <section class="footerInferior">
+            <p class="textInferior">
+                Alex Frontend 2022 - All Rights Reserved
+            </p>
+        </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

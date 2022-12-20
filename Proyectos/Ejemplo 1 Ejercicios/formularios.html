@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="./formularios.css" />
+    <link rel="Script" href="./app.js" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom" />
+</head>
+
+<body>
+    <aside class="menu">
+        <ul>
+            <li class="list">
+                <a href="./index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./formularios.html">
+                    <span class="icon">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </span>
+                    <span class="title">Formularios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./select.html">
+                    <span class="icon">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                    </span>
+                    <span class="title">Select</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./calendarios.html">
+                    <span class="icon">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                    </span>
+                    <span class="title">Calendarios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./botones.html">
+                    <span class="icon">
+                        <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Botones</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./auto_requiere.html">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Auto y requiere</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <main>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Formularios</h2>
+            <div class="secction__textImagen">
+                <p class="section__text">Los formularios sirven en escencia para enviar información de diferentes
+                    tipos a el servidor o Back-End, este prceso es muy importante para que el sitio WEB deje de ser
+                    estático y comienze a ser dinámico. En los formularios, podemos especificar los tipos de datos
+                    que se envian y también tiene opciones que facilitan el uso.</p>
+                <img class="secction__img" src="Iconos/Formulario.png" alt="imagen del secction">
+            </div>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">El siguiente código muestra la estructura básica de un formulario: </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;form&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp [conjunto de codigo dentro del form] </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&lt;/form></td>
+                </tr>
+
+            </table>
+        </article>
+
+        <article class="contenido__secction">
+            <p class="section__text">Despues de la etiqueta <strong>form</strong>, va la etilquela
+                <strong>label</strong> a su interior va <strong>span</strong> y <strong>input</strong>. Todas estas
+                etiquetas le dan propiedades y metadatos al formulario, necesarios para realizar el posterior
+                procesamiento. Mira este ejemplo:
+            </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;form action=""&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&nbsp &nbsp &nbsp &lt;label for="nombre"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;span&gt; ¿Cual es tu nombre? &lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;input type="text" id="nombre" /&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp &nbsp &nbsp &lt;/label&gt;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&lt;/form&gt;</td>
+                </tr>
+            </table>
+            <br>
+            <p class="section__text"> De este codigo saldria un formulario asi:</p>
+            <br>
+            <form class="form" action="">
+                <label for="">
+                    <span>¿Cual es tu nombre?</span><br>
+                    <input type="text" id="nombre" />
+                </label>
+            </form>
+        </article>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Type en el input</h2>
+            <p class="section__text">
+                Dependiendo el tipo de dato que nosotro necesitemos, podemos crear los formularios,
+                tambien para ayudar a el usuario a tener un formulario mas facil para llenar.
+            </p>
+            <br>
+            <p class="section__text">
+                Hay muchos tipos de input que ayudan en la semántica del sitio WEB. Dejaré en forma de lista, los que
+                encontré:
+            </p>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>&lt;input type="button"&gt;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&lt;input type="color"&gt;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&lt;input type="date"&gt;</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&lt;input type="datetime-local"&gt;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&lt;input type="email"&gt;</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>&lt;input type="file"&gt;</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>&lt;input type="hidden"&gt;</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>&lt;input type="image"&gt;</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>&lt;input type="month"&gt;</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>&lt;input type="number"&gt;</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>&lt;input type="password"&gt;</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>&lt;input type="radio"&gt;</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>&lt;input type="range"&gt;</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>&lt;input type="reset"&gt;</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>&lt;input type="search"&gt;</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>&lt;input type="search"&gt;</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>&lt;input type="submit"&gt;</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>&lt;input type="tel"&gt;</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>&lt;input type="text"&gt;</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>&lt;input type="time"&gt;</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>&lt;input type="week"&gt;</td>
+                </tr>
+            </table>
+            <br>
+            <p class="section__text">
+                Un ejemplo usando tres de estos tipos de input seria el siguiente:
+            </p>
+            <br>
+            <form class="form" action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span><br>
+                    <input type="text" id="nombre" placeholder="tu nombre" />
+                </label>
+                <br>
+                <br>
+                <label for="nacimiento">
+                    <span>¿Qué dia naciste?</span><br>
+                    <input type="date" id="nacimiento" />
+                </label>
+                <br>
+                <br>
+                <label for="hora">
+                    <span>¿Q qué hora sales por el pan?</span><br>
+                    <input type="time" id="hora" />
+                </label>
+            </form>
+        </article>
+
+        <article class="contenido__secction">
+            <h2 class="section__title">Nota</h2>
+            <p class="section__text">
+                El <strong>placeholder</strong> deja algo escrito en el espacio del formulario, asi como se muestra en
+                la pregunta de "¿Cual es tu nombre?" Si se percatan, hay esta escrito "tu nombre", eso es lo que hace el
+                <strong>placeholder</strong>.
+            </p>
+            <br><br>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="footerSuperior">
+            <div class="footerContent1">
+                <figure class="logo__figure">
+                    <img class="logo__img" src="LogoSVG__White.svg" alt="logo para el footer">
+                </figure>
+                <article class="footerText">
+                    <p class="footerText___p">
+                        Estos proyectos son solo practica y tienen la finalidad de explicar los temas vistos en HTML y
+                        CSS, en un futuro se agregará a estos proyectos JavaScript.
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent2">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Sobre mí
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Curriculum</li>
+                        <li>Portafolio</li>
+                        <li>Proyectos</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent3">
+                <article class="footerText">
+                    <h3 class="footerText__title">
+                        Links
+                    </h3>
+                    <br>
+                    <p class="footerText__p">
+                    <ul>
+                        <li>Home</li>
+                        <li>Formularios</li>
+                        <li>Select</li>
+                        <li>Calendarios</li>
+                        <li>Botones</li>
+                        <li>Auto y requiere</li>
+                    </ul>
+                    </p>
+                </article>
+            </div>
+
+            <div class="footerContent4">
+                <article class="footerText">
+                    <form class="formulario" action="">
+                        <label for="nombre">
+                            <span>
+                                <h3 class="footerText__title">
+                                    Enviame un mensaje
+                                </h3>
+                                <br>
+                            </span>
+                            <input id="email" type="email" autocomplete="email" placeholder="Escribe tu correo">
+                        </label>
+                    </form>
+                </article>
+
+                <figure class="footerIconos">
+                    <img class="footerIconos__img" src="Iconos/facebook.png" alt="facebook">
+                    <img class="footerIconos__img" src="Iconos/instagram.png" alt="instagram">
+                    <img class="footerIconos__img" src="Iconos/linkedin.png" alt="linkedin">
+                </figure>
+            </div>
+        </section>
+        <section class="footerInferior">
+            <p class="textInferior">
+                Alex Frontend 2022 - All Rights Reserved
+            </p>
+        </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
